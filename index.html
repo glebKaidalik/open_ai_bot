@@ -13,22 +13,20 @@
             margin: 0;
         }
 
-        /* Main Container */
         .container {
             position: relative;
             top: 0;
             left: 0;
             width: 1080px;
             height: 1920px;
-            background: #F5F5F5; /* Set background color for the main container */
+            background: #F5F5F5;
             opacity: 1;
-            margin: auto; /* Center the main container horizontally */
+            margin: auto;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
 
-        /* Pic CSS */
         .pic {
             width: 392px;
             height: 392px;
@@ -36,13 +34,12 @@
             border: 3px solid #27A7E7;
             border-radius: 50px;
             overflow: hidden; /* Clip the image */
-            margin-bottom: 20px; /* Add margin to separate pics */
+            margin-bottom: 20px;
             margin-top: 90px;
             margin-left: 10px;
             margin-right: 10px;
         }
 
-        /* Text CSS */
         .text {
             width: 100%;
             text-align: center;
@@ -52,24 +49,27 @@
             opacity: 1;
         }
 
-        /* Text 1 and Pic 1 */
+       .text.text1,
+        .text.text2 {
+            font-weight: bold;
+        }
+        
         .pic1 {
             background: transparent url('img/mario.png') 0% 0% no-repeat;
         }
 
         .text1,
         .text1-1 {
-            margin-top: 10px; /* Add margin to separate text and pic */
+            margin-top: 10px;
         }
 
-        /* Text 2 and Pic 2 */
         .pic2 {
             background: transparent url('img/albert.png') 0% 0% no-repeat;
         }
 
         .text2,
         .text2-1 {
-            margin-top: 10px; /* Add margin to separate text and pic */
+            margin-top: 10px;
         }
     </style>
 </head>
