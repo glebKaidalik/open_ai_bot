@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Page Title</title>
+    <title>Hero Choice</title>
     <style>
         body {
             display: flex;
@@ -73,17 +73,33 @@
         .text2-1 {
             margin-top: 10px;
         }
+
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="pic pic1"></div>
-        <div class="text text1">Mario</div>
-        <div class="text text1-1">Hero</div>
+<div class="container">
+    <div class="pic pic1"></div>
+    <div id='mario' class="text text1">Mario</div>
+    <div class="text text1-1">Hero</div>
 
-        <div class="pic pic2"></div>
-        <div class="text text2">Einstein</div>
-        <div class="text text2-1">Scientist</div>
-    </div>
+    <div id='albert' class="pic pic2"></div>
+    <div class="text text2">Einstein</div>
+    <div class="text text2-1">Scientist</div>
+</div>
+<script src="https://telegram.org/js/telegram-web-app.js"></script>
+<script>
+        let tg = window.Telegram.WebApp;
+        mario = document.getElementById('mario');
+        albert = document.getElementById('albert');
+
+        mario.addEventListener('click', () => {
+            tg.sendData('mario');
+        });
+        albert.addEventListener('click', () => {
+            tg.sendData('albert');
+        });
+
+
+</script>
 </body>
 </html>
